@@ -1,0 +1,375 @@
+
+### SCENARI
+scenario,descrizione,descrizione corta
+Slow Pace,"lo sviluppo dell’area segue le tendenze attuali, con un lento sviluppo degli elementi di innovazione e un’enfasi limitata sulla protezione e conservazione dell'ecosistema marino, peraltro in linea con le politiche e le normative vigenti","Un approccio graduale per migliorare la gestione delle attività costiere e marittime, promuovendo uno sviluppo sostenibile"
+Nature@Work,"in base al principio di precauzione, che si traduce in una minore accettazione del rischio dell'interazione tra le attività, e con l'obiettivo di ridurre/evitare gli effetti negativi sull'ecosistema marino, le aree naturali in base al principio di precauzione, che si traduce in una minore accettazione del rischio  dell'interazione tra le attività, e con l'obiettivo di ridurre/evitare gli effetti negativi sull'ecosistema marino, le aree naturali protette esistenti vengono ampliate e vengono messe in atto misure rigorose
+per proteggere, conservare e ripristinare habitat marini preziosi e vulnerabili",Protezione ambientale estesa con un forte impegno nella conservazione della biodiversità marina.
+Blue Development:,"grazie al rapido sviluppo di soluzioni innovative nei settori della blue economy, ad una maggiore accettazione del rischio di interazione tra le attività, le soluzioni ""building with nature"" consentono un'interazione sinergica tra le attività della blue economy e i preziosi habitat protetti.",Economia blu sostenibile basata su soluzioni innovative e tecnologie verdi.
+,"Mentre lo scenario ""Slow Pace"" segue gli attuali sviluppi con scarse ambizioni nei confronti dei settori dell'economia blu o degli obiettivi di protezione dell'ambiente marino, gli scenari Nature@Work e Blue Development hanno obiettivi più ambiziosi,
+esplorando possibili futuri in cui sono maggiormente promosse la protezione della natura o i settori blu nei loro aspetti più innovativi.",
+
+
+### AREE
+area,nome,descrizione
+NAS,Nord Adriatico,"L’area di studio comprende le acque marine sotto la giurisdizione nazionale (acque interne, acque territoriali, piattaforma continentale) antistanti le regioni Friuli Venezia Giulia, Veneto, Emilia Romagna e Marche, identificabili nelle cinque sub-aree A/1, A/2, A/3, A/4 e A/7 del Piano dello Spazio Marittimo dell’area marittima Adriatico. La costruzione e l’analisi degli scenari tiene conto, sia per aspetti legati ad alcuni usi del mare (in particolare pesca e trasporto marittimo) che per aspetti di conservazione ambientale, di un’area vasta che include le acque slovene e croate. Le caratteristiche dell'area di studio sono state schematizzate in varie componenti (driver, pressioni, componenti biofisiche, aree protette e aree di attenzione, servizi ecosistemici) che compongono il Sistema Socio-Ecologico (SES) dell'area NAS. Per una descrizione di questi elementi e delle loro relazioni principali si rimanda al documento “Socio-Ecological System (SES) of the North Adriatic Sea, E. Ramieri, Settembre 2023”."
+NTS,Mari Ligure e Tirreno Settentrionale,"L’area di studio comprende le acque marine sotto la giurisdizione nazionale (acque interne, acque territoriali, Zona di Protezione Ecologica ZPE) antistanti le regioni Liguria e Toscana, identificabili nelle tre sub-aree MO/1, MO/2, MO/8 del PSM dell’area marittima Tirreno – Mediterraneo Occidentale. Il SES dell’area è schematizzato nella figura seguente attraverso una serie di macro e micro componenti (Drivers, Fonti di Pressione, Pressioni, Componenti Biofisici, Aree Protette e Aree di Attenzione, Servizi Ecosistemici). Per una descrizione di questi elementi e delle loro relazioni principali si rimanda al documento “Socio-Ecological System (SES) of the Northern Tyrrhenian Sea – Synthesis Document, L. Gusatu, Settembre 2023”."
+SOS,Stretto di Sicilia,"L’area di studio comprende le acque marine sotto la giurisdizione nazionale (acque interne, acque territoriali, piattaforma continentale) antistanti le coste meridionali della Regione Sicilia, identificabili nelle tre sub-aree IMC/1, IMC/5 e IMC/6 del Piano dello Spazio Marittimo dell’area marittima Ionio-Mediterraneo centrale. La costruzione e l’analisi degli scenari tiene conto, sia per aspetti legati ad alcuni usi del mare (in particolare pesca, energia e trasporto marittimo) che per aspetti di conservazione ambientale, di un’area vasta che include le acque maltesi e tunisine. Il SES dell’area è schematizzato nella figura seguente attraverso una serie di macro e micro componenti (Drivers di cambiamento, Fonti di Pressione, Pressioni, Componenti Biofisiche, Aree Protette e Aree di Attenzione, Servizi Ecosistemici). Per una descrizione di questi elementi e delle loro relazioni principali si rimanda al documento di progetto “Socio-Ecological System (SES) of the Strait of Sicily” – Synthesis Document, A. Barbanti, Settembre 2023”."
+
+
+### AREA_SCENARIO
+area,scenario,narrativa ,orizzonte temporale,temi principali,temi secondari,stato giuridico,Trasporto marittimo,Protezione Ambientale,Difesa Costiera,Turismo Costiero e Marittimo,Pesca,Ricerca & Innovazione,Energia Rinnovabile,Paesaggio e patrimonio culturale,Energia,Acquacultura,Difesa costiera
+NAS,Slow Pace,"Gli obiettivi di sviluppo sostenibile sono perseguiti attraverso il miglioramento della gestione delle attività attualmente presenti nell’ambito costiero e marittimo e la promozione di trend di sviluppo positivi, favorendo allo stesso tempo la progressiva implementazione delle politiche in essere e delle misure di gestione ad esse collegate.","L’orizzonte temporale di riferimento è il 2040, con una focalizzazione nel breve periodo in linea con la logica alla base dello scenario e la narrativa che la esprime (i.e. limitata ambizione, business as usual, tecnologie attualmente disponibili e mature).","1. Protezione ambientale
+2. Trasporto marittimo
+3. Energia
+4. Difesa costiera
+5. Pesca
+6. Turismo","7. Acquacoltura
+8. Paesaggio e patrimonio culturale
+9. Ricerca e innovazione
+10. Sicurezza e sorveglianza",Lo scenario assume che sia istituita la zona economica esclusiva con limiti esterni corrispondenti a quelli indicati nel Piano MSP approvato.,"Considerata la crescente tendenza globale di questo settore e le proiezioni per il
+Mediterraneo, il trasporto marittimo continuerà a svilupparsi e la competitività dei porti
+italiani continuerà a migliorare. Lo scenario considera un incremento del traffico da oggi al 2040 così definito, in termini di densità di traffico (ovvero di rotte che attraversano
+ciascuna cella nell’unità di tempo) per diverse tipologie di imbarcazioni: +30% per navi cargo e portarinfuse (CAR); +53% per navi portacontainer (CON); +26% per navi passeggeri e da crociera (PAS); +38% per navi petroliere e gasiere (TGC); +33% per navi roll-on-roll-off cargo e passeggeri (RRO). Questi valori sono derivati dal recente studio
+condotto da EMSA per valutare l’evoluzione attesa del rumore sottomarino nei mari europei, con e senza misure di mitigazione (EMSA, 2024), e sono in linea con altre
+indicazioni derivabili dalla letteratura di settore: proiezioni del trasporto marittimo
+globale al 2050 (EMSA-EEA, 2021); aumento annuo atteso delle movimentazioni di
+container del 4,1% nel Mediterraneo orientale (Piano del Mare (2023-2025)) e del 4.0%
+relativamente al periodo 2021-2026 sempre nel Mediterraneo orientale (Panaro, 2022). Nel corso dell’analisi potranno essere considerate a titolo esplorativo altre percentuali di variazione per una o più tipologia di navi, anche in relazione ad evidenze e informazioni locali rilevanti.
+L’aumento di traffico riguarderà in particolare le principali direttrici attuali.
+Contestualmente all’aumento dei trasporti, lo scenario considera il miglioramento e la
+modernizzazione delle principali infrastrutture portuali del NAS, anche in termini di transizione verso una maggior sostenibilità ambientale.","Lo scenario SP si concentra prevalentemente sulla attuazione delle misure esistenti.
+Questo riguarda sia le misure di conservazione e di gestione previste per le aree
+protette (AMP e siti N2K) che le misure previste per i diversi settori e nei diversi ambiti
+geografici, attraverso le politiche e gli strumenti esistenti (es. Programma delle Misure
+di MSFD, Piani di Distretto WFD, Piani di Gestione del Rischio della Direttiva Alluvioni,
+CFP, misure del Piano MSP, ecc.), inclusi quindi gli aspetti di interazione terra-mare
+(LSI). Come da Action Plan (COM(2023)102 final), è vietata la pesca a strascico con attrezzi attivi nelle aree SIC/ZSC designate ai sensi della direttiva Habitat per la
+protezione di habitat e specie marine bentoniche. Nei siti N2K (Adriatico settentrionale) istituiti ai sensi della protezione di specie mobili (tartarughe marine e
+tursiopi) è vietata la pesca con palangari e lenze ad amo; vengono inoltre messe in atto misure per minimizzare il by-catch. In generale, nello scenario si tende ad una
+omogeneizzazione delle misure di conservazione previste nei diversi siti della rete N2K.",,,,,,,,,
+NAS,Nature@Work,"Lo scenario attua in maniera sostanziale ed estesa i principi di protezione ambientale e di precauzione (ridurre o evitare effetti negativi sull’ambiente marino) attraverso una significativa estensione della rete di aree protette, attraverso l’implementazione di nuove misure di conservazione per ridurre gli effetti delle pressioni antropiche, anche al fuori delle aree protette propriamente dette e attraverso una evoluzione del sistema degli usi del mare e della costa, nuovi o già esistenti, compatibile con la natura e gli obiettivi dello scenario.","L’orizzonte temporale di riferimento è il 2040, che si configura come particolarmente ambizioso, soprattutto riguardo alla necessità di una rapida definizione e istituzione di nuove aree per la conservazione.","1. Protezione ambientale
+2. Trasporto marittimo
+3. Energia rinnovabile
+4. Energia – Oil&Gas
+5. Difesa costiera
+6. Pesca
+7. Turismo
+8. Paesaggio e Patrimonio culturale
+9. Ricerca e innovazione","10. Acquacoltura
+11. Sicurezza e Sorveglianza",,,,,,,,,,,,
+NAS,Blue Development,"Nello scenario BD una serie di azioni importanti ed estese con obiettivi specifici di conservazione si combinano con azioni che favoriscono uno sviluppo sostenibile dell’economia blu, con particolare riferimento a settori innovativi, all’utilizzo di Nature Based Solutions (NBS) e di soluzioni e tecnologie in grado di ridurre le pressioni e gli impatti antropici.","L’orizzonte temporale di riferimento è anche in questo il 2040, pur se è evidente che i nuovi usi e le trasformazioni previste, in particolare nei settori del trasporto marittimo e della pesca, così come le soluzioni e tecnologie adottate proiettano tendenzialmente questo scenario su un orizzonte di più lungo periodo.","1. Protezione ambientale
+2. Trasporto marittimo
+3. Energia rinnovabile
+4. Energia – Oil&Gas
+5. Difesa costiera
+6. Pesca
+7. Acquacoltura
+8. Turismo
+9. Paesaggio e patrimonio culturale
+10. Ricerca e innovazione",11. Sicurezza e sorveglianza,,,,,,,,,,,,
+NTS,Slow Pace,"Gli obiettivi di sviluppo sostenibile sono perseguiti attraverso il miglioramento della gestione delle attività attualmente presenti nell’ambito costiero e marittimo e la promozione di trend di sviluppo positivi, favorendo allo stesso tempo la progressiva implementazione delle politiche in essere e delle misure di gestione ad esse collegate.","L’orizzonte temporale di riferimento è il 2040, con una focalizzazione nel breve periodo in linea con la logica alla base dello scenario e la narrativa che la esprime (i.e. limitata ambizione, business as usual, tecnologie attualmente disponibili e mature).","1. Trasporto marittimo
+2. Protezione Ambientale
+3. Pesca
+4. Difesa Costiera
+5. Turismo Costiero e Marittimo
+6. Energia","1. Paesaggio e Patrimonio culturale
+2. Acquacultura
+3. Sicurezza e Sorveglianza","Lo scenario assume che sia istituita la zona economica esclusiva con limiti esterni
+corrispondenti a quelli indicati nel Piano MSP approvato.",,,,,,,,,,,
+NTS,Nature@Work,"Lo scenario attua in maniera sostanziale ed estesa i principi di protezione ambientale e di precauzione (ridurre o evitare effetti negativi sull’ambiente marino) attraverso una significativa estensione della rete di aree protette e attraverso l’implementazione di nuove misure di conservazione, anche al fuori delle aree protette propriamente dette.","L’orizzonte temporale di riferimento è il 2040, e si configura come particolarmente ambizioso, soprattutto riguardo alla rapida definizione di nuove aree prioritarie per la conservazione.","1. Trasporto marittimo
+2. Protezione Ambientale
+3. Difesa Costiera
+4. Turismo
+5. Pesca
+6. Ricerca & Innovazione
+7. Energia Rinnovabile
+8. Paesaggio e patrimonio culturale","1. Sicurezza e Sorveglianza
+2. Acquacultura",,"Il trasporto marittimo è uno dei settori più impattanti nell’area. I principali elementi di pressione sull’ambiente sono rappresenti dall’inquinamento chimico delle acque e dell’atmosfera, dal rumore subacqueo, dal rischio di collisione con cetacei, dal rischio di introduzione di specie aliene, dal rischio di inquinamento in caso di incidente, di
+inquinamento chimico, ma anche dal disturbo fisico in superficie e dal disturbo
+acustico. La transizione sostenibile di questo settore è fondamentale nello scenario
+N@W.
+Lo scenario, a differenza di SP e BD, ipotizza il mantenimento dell'attuale livello e
+tipologia di traffico.
+Essendo l’area di studio una rotta marittima internazionale fondamentale, le azioni più
+importanti da intraprendere in questo scenario sono l’implementazione di misure di
+prevenzione dell’inquinamento (inclusa la transizione verso combustibili alternativi) e
+delle collisioni con la megafauna marina, a livello internazionale, comunitario e
+regionale attraverso azioni di cooperazione. Ulteriori iniziative verso la sostenibilità
+sono intraprese nei porti della zona.","Lo scenario N@W, oltre ad attuare quanto previsto dal sistema di protezione
+ambientale e riduzione delle pressioni esistenti, aumenta in modo significativo
+l'estensione delle aree protette, promuove interventi di restauro e introduce nuove
+misure di conservazione spaziale.
+La conservazione degli habitat prioritari delle acque profonde e costiere e delle specie
+mobili è considerata un principio imprescindibile dal grande pubblico.","Le misure per affrontare l’erosione costiera e il rischio di
+inondazioni vengono intraprese con una chiara visione e programmazione a mediolungo
+termine, tenendo conto degli scenari climatici e a partire dalle aree più critiche
+(2006-2020, ISPRA). Le misure da intraprendere non sono semplici: è necessario
+ricreare il nesso naturale terra-mare, considerando l’apporto fluviale e le dinamiche
+naturali delle dune. Nel contesto di un territorio fortemente modificato e antropizzato,
+è richiesta una combinazione di molteplici interventi di piccola/media scala.","La transizione sostenibile del turismo costiero e marittimo viene fortemente
+promossa e i modelli turistici implementati evolvono rispetto a quelli di tipo
+tradizionale oggi in essere. Questo riguarda importanti aspetti di sostenibilità come il
+risparmio energetico e delle risorse in genere, la gestione dei rifiuti, la gestione e
+destagionalizzazione dei flussi.","La distribuzione spaziale dello sforzo nell'area presenta nel tempo cambiamenti
+notevoli e l'intensità della pesca a strascico generalmente diminuisce, proseguendo
+il trend in atto ed anche in relazione all’istituzione di nuove aree protette.","Ricerca e innovazione sono promosse nell'area (e.g. sistemi di osservazione e
+monitoraggio, centri di ricerca), per supportare un'economia blu sostenibile e una
+conservazione e restauro degli ecosistemi marini. Altre attività di ricerca si focalizzano
+sulle tecnologie per produrre energia dal moto ondoso.",Lo scenario non prevede lo sviluppo di eolico offshore nell’area di studio,"Portovenere, Cinque Terre e Isole (Palmaria, Tino e Tinetto) sono iscritti nella World
+Heritage List dell'UNESCO dal 1997, quale paesaggio culturale della Riviera Ligure.
+In Liguria inoltre sono presenti vari musei navali e relativi al patrimonio marittimo
+(materiale ed immateriale) che concorrono ad una rete culturale in ambito regionale
+e nazionale.
+In Toscana è presente la riserva della Biosfera del Programma UNESCO Man and Biosphere denominata Isole di Toscana.",,,
+NTS,Blue Development,"Nello scenario BD una serie di azioni importanti ed estese con obiettivi specifici di conservazione si combinano con azioni che favoriscono uno sviluppo sostenibile dell’economia blu, con particolare riferimento a settori innovativi, all’utilizzo di Nature
+Based Solution (NBS) e di soluzioni e tecnologie in grado di ridurre le pressioni e gli impatti antropici.","L’orizzonte temporale di riferimento è anche in questo il 2040, pur se è evidente che i nuovi usi e le trasformazioni previste, in particolare nei settori del trasporto marittimo e della pesca, così come le soluzioni e tecnologie adottate proiettano tendenzialmente questo scenario su orizzonti di più lungo periodo.","1. Energia
+2. Trasporto Marittimo
+3. Protezione ambientale
+4. Pesca
+5. Acquacultura
+6. Difesa costiera
+7. Turismo Costiero e Marittimo
+8. Ricerca & Innovazione
+9. Paesaggio e patrimonio culturale",1. Sicurezza e sorveglianza,,"Il trasporto marittimo è uno dei settori più impattanti dell’area. Il traffico non solo rappresenta un rischio di collisione con cetacei, di inquinamento chimico ma anche disturbo fisico in superficie e un disturbo acustico. La transizione sostenibile di questo settore è fondamentale nello scenario. ","Lo scenario BD, oltre ad attuare quanto previsto dal sistema di protezione ambientale
+e riduzione delle pressioni esistente, aumenta l'estensione delle aree protette,
+promuove interventi di restauro e introduce nuove misure di conservazione spaziali.
+L’importanza della conservazione degli habitat e delle specie è sempre più
+riconosciuta dal grande pubblico. Ciononostante, la crescita dei settori marittimi è
+considerata in questo scenario una priorità. Gli investimenti sulla crescita blu
+considerano attentamente e mirano alla sostenibilità, migliorando l’efficienza
+energetica e producendo una migliore gestione delle interazioni fra gli usi e l’ambiente.
+Pur trovandoci in uno scenario denominato ""Blue Development"", la ""natura"" non viene
+considerata un ""uso"" alla pari di altri, in quanto la tutela della natura deve essere
+attuata in generale in relazione a qualsiasi tipo di uso. La strategia per l'ambiente
+marino di cui la pianificazione marittima deve tener conto si rivolge a tutta l'area
+marittima del Mediterraneo ed individua azioni ed obiettivi di qualità ambientale per
+tutte le acque marine. In sintesi, il tema Natura rappresenta un elemento prevalente
+e imprescindibile su tutto lo spazio marittimo.",,"La transizione sostenibile del turismo costiero e marittimo viene fortemente
+promossa e i modelli turistici implementati evolvono rispetto a quelli di tipo
+tradizionale oggi in essere. Questo riguarda importanti aspetti di sostenibilità come il
+risparmio energetico e delle risorse in genere, la gestione dei rifiuti, la gestione e
+destagionalizzazione dei flussi. Viene promossa la diversificazione dell’offerta su
+settori di turismo esperienziale quali l’ecoturismo, anche in relazione all’ampliamento
+della rete di aree protette, il pescaturismo, il diving e il whale watching.","La distribuzione spaziale dello sforzo nell'area presenta nel tempo cambiamenti
+notevoli e l'intensità della pesca a strascico diminuisce, proseguendo il trend in atto
+ed anche in relazione all’istituzione di nuove aree protette e l'ampliamento delle 3 ZTB
+esistenti, nelle aree con maggiore presenza di EFH e VME (Ortega et al., 2023).","Ricerca e innovazione sono promosse nell'area (e.g. sistemi di osservazione e
+monitoraggio, centri di ricerca), per supportare un'economia blu sostenibile e una
+conservazione e restauro degli ecosistemi marini. Altre attività di ricerca si focalizzano
+sulle tecnologie per produrre energia dal moto ondoso. Nello scenario sono
+individuati, in modo non esaustivo, i principali siti osservativi e centri di ricerca
+attualmente presenti.",,"Portovenere, Cinque Terre e Isole (Palmaria, Tino e Tinetto) sono iscritti nella World
+Heritage List dell'UNESCO dal 1997, quale paesaggio culturale della Riviera Ligure.
+In Liguria inoltre sono presenti vari musei navali e relativi al patrimonio marittimo (materiale ed immateriale) che concorrono ad una rete culturale in ambito regionale e nazionale. In Toscana è presente la riserva della Biosfera del Programma UNESCO Man and Biosphere denominata Isole di Toscana.","I futuri sviluppi dei parchi eolici offshore (OWF) daranno priorità a soluzioni per ridurne
+gli impatti, seguendo le migliori pratiche che incidono su:
+1. Progettazione: utilizzo delle infrastrutture dell’OWF in progetti di ripristino
+della natura (ad esempio fondazioni di turbine progettate come scogliere
+artificiali);
+2. gestione strategica: riduzione degli effetti cumulativi delle attività legate agli
+OWF sulle specie e sugli habitat di valore identificati, implicando una
+pianificazione nello spazio e nel tempo, ad esempio, delle attività di
+trivellazione, delle attività delle navi, del funzionamento degli OWF in linea
+con i modelli migratori e sensibilità/tempo di recupero e capacità delle
+specie;
+3. l'interazione e altre attività (rifugio climatico/santuario dei pesci limitando
+rigorosamente l'accesso di altre attività impattanti all'interno dell'OWF. Lo
+sviluppo è linea con gli obiettivi nazionali attuali e ragionevolmente attesi per
+l'Italia al 2030 e 2040-2050 (2.1 GW al 2030 (PNIEC, 2023), 5 GW al 2040),
+la capacità OWF installata nel 2040 in NTS è stabilita in un valore obiettivo
+nello scenario BD di 1 GW. L’esigenza di raggiungere un impatto ambientale
+ridotto avrà un impatto sulla progettazione degli OWF, sulle soluzioni
+tecnologiche e sulle opzioni di gestione degli OWF. Pertanto, si può stimare
+che la capacità di densità dei siti OWF potrebbe portare ad una produzione
+specifica attesa di 3-4 MW/km2, sulla base anche delle intensità medie del
+vento presente nell'area (6-7 m/s), ciò potrebbe tradursi in ca. 300 km2 di
+superficie necessaria.","Nello scenario Blue Development la produzione alimentare nella zona è considerata
+una priorità e lo sviluppo dell’acquacoltura (molluschi e pesci) rappresenta una
+risorsa importante. Gli investimenti in tecnologie innovative (e.g. Acquacoltura Multi-
+Trofica Integrata o IMTA, mangimistica e riduzione degli antibiotici) e nella
+diversificazione delle specie sono identificati come uno strumento per rispondere alle
+pressioni e adeguatamente sostenuti dai fondi strutturali. I fondi mirano anche al
+miglioramento dell’efficienza energetica dell’acquacoltura nonché a superare alcuni fattori che limitano oggi l’attività nell’area, quali l’impatto paesaggistico, il conflitto con altre attività (es. balneazione) ed il sistema di goverance","Nello scenario BD, le misure per affrontare l’erosione costiera e il rischio di
+inondazioni vengono intraprese con una chiara visione e programmazione a lungo
+termine, tenendo conto degli scenari climatici e a partire dalle aree più critiche (2006-
+2020, ISPRA). Le misure da intraprendere non sono semplici: è necessario ricreare il
+nesso naturale terra-mare, considerando l’apporto fluviale e le dinamiche naturali
+delle dune. Nel contesto di un territorio fortemente modificato e antropizzato, è
+richiesta una combinazione di molteplici interventi di piccola/media scala."
+SOS,Slow Pace,"Gli obiettivi di sviluppo sostenibile sono perseguiti attraverso il miglioramento della gestione delle attività attualmente presenti nell’ambito costiero e marittimo e la promozione di trend di sviluppo positivi, favorendo allo stesso tempo la progressiva implementazione delle politiche in essere e delle misure di gestione ad esse collegate.","L’orizzonte temporale di riferimento è il 2040, con una focalizzazione nel breve periodo in linea con la logica alla base dello scenario e la narrativa che la esprime (i.e. limitata ambizione, business as usual, tecnologie attualmente disponibili e mature).","1. Trasporto marittimo
+2. Protezione ambientale
+3. Pesca
+4. Energia - Oil&Gas
+5. Energia - Rinnovabili
+6. Paesaggio e patrimonio culturale","1. Difesa costiera
+2. Turismo
+3. Ricerca e Innovazione
+4. Sicurezza e sorveglianza",Lo scenario assume che sia istituita la zona economica esclusiva con limiti esterni corrispondenti a quelli indicati nel Piano MSP approvato.,"Considerata la crescente tendenza globale di questo settore e le proiezioni per
+il Mediterraneo, questo settore continuerà a svilupparsi e la competitività dei
+porti italiani continuerà a migliorare.","Lo scenario SP si concentra prevalentemente sulla attuazione delle misure
+esistenti. Questo riguarda sia le misure di conservazione e di gestione previste
+per le aree protette esistenti (AMP, N2K) che le misure previste per i diversi
+settori e nei diversi ambiti geografici, attraverso le politiche e gli strumenti
+esistenti (e.g. Programma delle Misure di MSFD, Piani di Distretto WFD, Piani di
+Gestione del Rischio della Direttiva Alluvioni, CFP, Misure del Piano MSP), inclusi
+quindi gli aspetti di interazione terra-mare (LSI). Come da Action Plan
+(COM(2023)102 final), si vieta la pesca a strascico con attrezzi attivi nelle aree SIC/ZSC designate ai sensi della direttiva Habitat per la protezione di habitat e le
+specie marine bentoniche.",,,"L'intensità della pesca a strascico diminuisce complessivamente del 9%,
+redistribuendo spazialmente lo sforzo tenendo conto delle nuove chiusure previste dallo scenario (e.g. nuove aree protette, campi eolici, nuove FRA). Questo trend è in
+linea anche con le politiche in atto per incentivare con risorse dedicate la riduzione della flotta per la pesca a strascico.",,"Presupponendo misure più rigorose per la protezione della natura e la riduzione
+degli effetti negativi delle attività umane, gli sviluppi futuri dei parchi eolici
+offshore daranno priorità a soluzioni per ridurne gli impatti. Seguendo le migliori
+pratiche attuali, ciò implicherà una serie di opzioni che incidono su:
+1. la progettazione dell’OWF: utilizzo delle infrastrutture dell’OWF in
+progetti di ripristino della natura (ad esempio fondazioni di turbine
+progettate come scogliere artificiali);
+2. la gestione strategica delle attività dell’OWF: riduzione degli effetti
+cumulativi delle attività legate agli OWF sulle specie e sugli habitat di
+valore identificati, implicando una pianificazione nello spazio e nel
+tempo, ad esempio, delle attività di trivellazione o di fondazione, delle
+attività delle navi, del funzionamento degli OWF in linea con i modelli
+migratori e sensibilità/tempo di recupero e capacità delle specie;
+3. l'interazione tra l’OWF e altre attività: l'uso dei siti OWF come rifugio
+climatico/santuario dei pesci limitando rigorosamente l'accesso di altre
+attività impattanti all'interno dell'OWF. In linea con: 1) le ipotesi dello scenario SP orientato primariamente ad uno sviluppo ambientalmente sostenibile dei trend in essere, 2) le aree con proposte
+di OWF in essere, con vari livelli di avanzamento progettuale e istruttorio, 3 )
+esempi di soluzioni di migliori pratiche utilizzabili per ridurre gli impatti, 4) gli
+obiettivi nazionali attuali e ragionevolmente attesi per l'Italia al 2030 e 2040-2050
+(2.1 GW al 2030 (PNIEC, 2023), 5 GW al 2040-2050), la capacità OWF installata
+nel 2040 in SOS è stabilita in un valore obiettivo nello scenario SP di 1 GW.
+L’esigenza di raggiungere un impatto ambientale ridotto dovrà avere un impatto
+sulla progettazione degli OWF, sulle soluzioni tecnologiche e sulle opzioni di
+gestione degli OWF. Considerando una produzione specifica attesa di 4
+MW/km2, sulla base anche delle intensità medie del vento presente nell'area (7-
+8 m/s), ciò si tradurrebbe in ca. 250 km2 per ospitare 1 GW.","La tutela del paesaggio (in particolare nelle aree vicine alla costa) e dell'UCH (in
+tutte le aree, comprese le acque profonde) è valorizzata e associata, ove
+possibile, alla protezione della natura stabilendo obiettivi comuni e attività di
+monitoraggio e sorveglianza. Le misure puntano a sostenere il valore
+paesaggistico della fascia costiera, promuovendo il recupero e la
+riqualificazione di edifici e aree soggette a tutela e lotta all'abusivismo edilizio
+nelle aree costiere. Particolare rilevanza ha la conservazione del patrimonio
+archeologico subacqueo. Si propongono anche iniziative mirate a promuovere e
+creare consapevolezza sul patrimonio culturale immateriale e promuovere la
+cooperazione regionale e internazionale nel settore. La valorizzazione si
+focalizza su azione “in loco”, mediante la realizzazione di itinerari subacquei o
+multimediali (culturali ma anche naturalistici, Telecamere subacquee, VR), al
+fine di sensibilizzare i fruitori alla tutela e alla fruizione sostenibile.",,,
+SOS,Nature@Work,"Lo scenario attua in maniera sostanziale ed estesa i principi di protezione ambientale e di precauzione (ridurre o evitare effetti negativi sull’ambiente marino) attraverso una significativa estensione della rete di aree protette, attraverso l’implementazione di nuove misure di conservazione per ridurre gli effetti delle pressioni antropiche, anche al fuori delle aree protette propriamente dette e attraverso una evoluzione del sistema degli usi del mare e della costa, nuovi o già esistenti, compatibile con la natura e gli obiettivi dello scenario.","L’orizzonte temporale di riferimento è il 2040, che si configura come particolarmente ambizioso, soprattutto riguardo alla necessità di una rapida definizione ed istituzione di nuove aree per la conservazione.","1. Trasporto marittimo
+2. Protezione Ambientale
+3. Difesa Costiera
+4. Turismo
+5. Pesca
+6. Ricerca & Innovazione
+7. Energia Rinnovabile
+8. Paesaggio e patrimonio culturale","9. Sicurezza e Sorveglianza
+10. Acquacoltura",Lo scenario assume che sia istituita la zona economica esclusiva con limiti esterni corrispondenti a quelli indicati nel Piano MSP approvato.,"Il trasporto marittimo è uno dei settori più impattanti nell’area. I principali elementi di pressione sull’ambiente sono rappresentati dall’inquinamento chimico delle acque e
+dell’atmosfera, dal rumore subacqueo, dal rischio di collisione con cetacei, dal rischio
+di introduzione di specie aliene e, non ultimo da rischio di inquinamento in caso di incidente. La transizione sostenibile di questo settore è fondamentale nello scenario N@W. Lo scenario considera il mantenimento dell'attuale livello e tipologia di traffico. E’ atteso peraltro un incremento, valutato complessivamente modesto rispetto al
+traffico complessivamente presente nell’area, del traffico a corto raggio per attività di costruzione e manutenzione dei campi eolici previsti nello scenario, e di altri campi eolici potenzialmente realizzabili in aree circostanti (in particolare nell’area a ovest
+dell’area pilota SOS).","Lo scenario N@W, oltre ad attuare quanto previsto dal sistema di protezione
+ambientale e riduzione delle pressioni esistente, aumenta in modo significativo l'estensione delle aree protette, considera e promuove interventi di restauro attivo e
+passivo (REG.UE 2024/1991 del 17/06/24) e introduce nuove misure di conservazione
+spazialmente basate. La conservazione degli habitat prioritari delle acque profonde e
+costiere e delle specie mobili è considerata un principio imprescindibile dal grande
+pubblico. I corridoi di navigazione sono progettati e gestiti in modo coerente con i
+requisiti dei mammiferi marini e delle tartarughe, tutti i siti Natura 2000 hanno piani di gestione approvati e attuati. Vengono promosse strategie di economia circolare per la
+trasformazione e valorizzazione dei rifiuti provenienti dal mare individuando nelle aree portuali i siti di riferimento per l’attuazione di queste strategie. L’integrazione tra i siti N2K e le attività marittime, compreso il turismo lento, la pesca artigianale e l’acquacoltura sostenibile, sta funzionando, sebbene si evitino interazioni nelle aree
+centrali della rete. Viene istituita attraverso un processo progressivo e concertato una
+riserva della biosfera transnazionale, una MAB UNESCO (https://www.unesco.org/en/mab), che si estende da Capo Passero a Kerkennah nel Golfo di Gabes, in Tunisia, ricomprendendo Pantelleria, le Pelagie e Malta.","Nello scenario N@W, le misure per affrontare l’erosione costiera e il rischio di inondazioni vengono intraprese con una chiara visione e programmazione a mediolungo termine, tenendo conto degli scenari climatici (PRCEC, 2020 e nuovo Piano in
+fase di ultimazione da parte dell’Autorità di Bacino del Distretto Idrografico della Sicilia). Vengono identificati gli hotspot erosivi. Le misure da intraprendere non sono semplici: è necessario ricreare il nesso naturale terra-mare, considerando l’apporto fluviale e le dinamiche naturali delle dune. Nel contesto di un territorio fortemente modificato e antropizzato, è richiesta una combinazione di molteplici interventi di piccola/media scala. Le cause dell’erosione vengono analizzate e comprese alla scala spaziale più adeguata
+e le azioni di difesa costiera sono integrate ove necessario con azioni lungo i corsi d’acqua, le foci e le aree portuali. Gli interventi attuati sono soft e le Nature-Based
+Solutions (NBS) hanno la priorità.","La transizione sostenibile del turismo C&M viene fortemente promossa e i modelli turistici implementati evolvono rispetto a quelli di tipo tradizionale oggi in essere. Questo riguarda importanti aspetti di sostenibilità come il risparmio energetico e delle
+risorse in genere, la gestione dei rifiuti, la gestione e destagionalizzazione dei flussi.
+Viene promossa la diversificazione dell’offerta su settori di turismo esperienziale quali l’ecoturismo, anche in relazione all’ampliamento della rete di aree protette, il
+pescaturismo, e diving su aree di valore culturale subacqueo. Specifiche misure di regolamentazione riguardano il diporto (e.g. aree di ormeggio e gestione dei marina), in particolare nelle AMP e nelle aree Natura 2000.","La distribuzione spaziale dello sforzo nell'area presenta nel tempo cambiamenti notevoli e l'intensità della pesca a strascico generalmente diminuisce, proseguendo il trend in atto ed anche in relazione all’istituzione di nuove aree protette. Più
+precisamente, l'intensità della pesca a strascico diminuisce complessivamente del 9%, redistribuendo spazialmente lo sforzo tenendo conto delle nuove chiusure previste dallo scenario (e.g. nuove aree protette, campi eolici, nuove FRA). Questo
+trend è in linea anche con le politiche in atto per incentivare con risorse dedicate la riduzione della flotta per la pesca a strascico.","La ricerca e innovazione sono promosse nell'area (e.g. centri di ricerca, sistemi di osservazione e monitoraggio), per supportare un'economia blu sostenibile, la conservazione e restauro degli ecosistemi marini e la ricerca di materiali e soluzioni a basso impatto per gli impianti eolici offshore. Vengono promosse attività di ricerca per colmare le principali lacune conoscitive attualmente esistenti sull’area, quali ad
+esempio una più precisa identificazioni spaziale della distribuzione VME e degli habitat “pristine”. Sono promosse attività di ricerca per sviluppare nuove modalità di fruizione
+e protezione del patrimonio culturale subacqueo e della biodiversità e attività di citizen science.","Presupponendo misure più rigorose per la protezione della natura e la riduzione degli effetti negativi delle attività umane, gli sviluppi futuri dei parchi eolici offshore daranno
+priorità a soluzioni per ridurne gli impatti. Seguendo le migliori pratiche attuali, ciò
+implicherà una serie di opzioni che incidono su: 1) la progettazione dell’OWF: utilizzo delle infrastrutture dell’OWF in progetti di ripristino della natura (ad esempio fondazioni di turbine progettate come scogliere artificiali); 2) la gestione strategica delle attività dell’OWF: riduzione degli effetti cumulativi delle
+attività legate agli OWF sulle specie e sugli habitat di valore identificati, implicando una
+pianificazione nello spazio e nel tempo, ad esempio, delle attività di trivellazione o di fondazione, delle attività delle navi, del funzionamento degli OWF in linea con i modelli migratori e sensibilità/tempo di recupero e capacità delle specie; 3) l'interazione tra l’OWF e altre attività. In linea con: 1) le ipotesi dello scenario N@W orientato primariamente a promuovere aspetti di conservazione, 2) le aree con proposte di OWF in essere, con
+vari livelli di avanzamento progettuale e istruttorio, 3) esempi di soluzioni di migliori pratiche utilizzabili per ridurre gli impatti, 4) gli obiettivi nazionali attuali e ragionevolmente attesi per l'Italia al 2030 e 2040-2050 (2.1 GW al 2030 (PNIEC,
+2023), 5 GW al 2040-2050), la capacità OWF installata nel 2040 in SOS è stabilita
+in un valore obiettivo nello scenario N@W di 1 GW. L’esigenza di raggiungere un impatto ambientale ridotto dovrà avere un impatto sulla progettazione degli OWF, sulle soluzioni tecnologiche e sulle opzioni di gestione degli OWF. Considerando una produzione specifica attesa di 4 MW/km2, sulla base anche delle intensità medie del vento presente nell'area (7-8 m/s), ciò si tradurrebbe in ca. 250 km2 per ospitare 1 GW, entro il 2040.","Nello scenario N@W, la tutela del paesaggio (in particolare nelle aree vicine alla costa) e dell'UCH (in tutte le aree, comprese le acque profonde) è valorizzata e associata, ove
+possibile, alla protezione della natura stabilendo obiettivi comuni e attività di monitoraggio e sorveglianza. Le azioni di tutela sono anche associate ad iniziative gestite di turismo esperienziale e culturale, anche utilizzando tecnologie digitali. Le misure puntano a sostenere il valore paesaggistico della fascia costiera, promuovendo
+il recupero e la riqualificazione di edifici e aree soggette a tutela e lotta all'abusivismo edilizio nelle aree costiere. Particolare rilevanza ha la conservazione del patrimonio archeologico subacqueo. Si propongono anche iniziative mirate a promuovere e creare consapevolezza sul patrimonio culturale immateriale e promuovere la cooperazione
+regionale e internazionale nel settore. La valorizzazione si focalizza su azione “in loco”,
+mediante la realizzazione di itinerari subacquei o multimediali (culturali ma anche
+naturalistici, Telecamere subacquee, VR), al fine di sensibilizzare i fruitori alla tutela e
+alla fruizione sostenibile.",,,
+SOS,Blue Development,"Nello scenario BD una serie di azioni importanti ed estese con obiettivi specifici di conservazione si combinano con azioni che favoriscono uno sviluppo sostenibile dell’economia blu, con particolare riferimento a settori innovativi, all’utilizzo di Nature Based Solutions (NBS) e di soluzioni e tecnologie in grado di ridurre le pressioni e gli impatti antropici.","L’orizzonte temporale di riferimento è anche in questo il 2040, pur se è evidente che i nuovi usi e le trasformazioni previste, in particolare nei settori del trasporto marittimo e della pesca, così come le soluzioni e tecnologie adottate proiettano tendenzialmente questo scenario su un orizzonte di più lungo periodo.","1. Energia
+2. Trasporto Marittimo
+3. Protezione ambientale
+4. Pesca
+5. Acquacoltura
+6. Difesa costiera
+7. Turismo Costiero e Marittimo
+8. Ricerca & Innovazione
+9. Paesaggio e patrimonio culturale","1. Sicurezza e sorveglianza
+2. Energia - Oil&Gas",Lo scenario assume che sia istituita la zona economica esclusiva con limiti esterni corrispondenti a quelli indicati nel Piano MSP approvato.,"Lo scenario è simile a N@W, ma considera un incremento del traffico da oggi al 2040 così definito, in termini di densità di traffico, ovvero di rotte che
+attraversano ciascuna cella nell’unità di tempo, per diverse tipologie di imbarcazioni: +30% per navi cargo e portarinfuse (CAR); +53% per navi
+portacontainer (CON); +26% per navi passengeri e da crociera (PAS); +38% per navi petroliere e gasiere (TGC); +33% per navi roll-on-roll-off cargo e passengeri (RRO). Questi valori sono derivati dal recente studio condotto da EMSA per valutare l’evoluzione attesa del rumore sottomarino nei mari europei, con e senza misure di mitigazione (EMSA, 2024), e sono in linea con altre indicazioni derivabili dalla letterature di settore: proiezioni del trasporto marittimo globale al 2050 (EMSA-EEA, 2021); aumento annuo atteso delle movimentazioni di container del 3.1% nel Mediterraneo occidentale (Piano del Mare (2023)) e del 2.7% relativamente al periodo 2021-2026 (Report SRM 2022).
+Nel corso dell’analisi potranno essere considerate a titolo esplorativo altre
+percentuali di variazione per una o più tipologia di navi, anche in relazione ad evidenze e informazioni locali rilevanti. L’aumento di traffico riguarderà in particolare le principali direttrici attuali, al netto delle redistribuzioni dei flussi imposte da altri elementi di scenario (ad esempio, campi eolici), ma sarà associato a interventi per la riduzione del suo impatto: riduzione della velocità a 10 nodi in una subarea della nuova PSSA (area CCH) con effetti su URN e su collisioni con cetacei, riduzione della rumorosità media della flotta mercantile e passeggeri, migliore regolamentazione della gestione delle acque di zavorra (BWM), ulteriore potenziamento dei sistemi di prevenzione e gestione di eventi di inquinamento accidentale, evoluzione verso
+combustibili a minori emissioni. Ulteriori iniziative verso la sostenibilità vengono
+intraprese nei porti, grandi e piccoli, della zona (ad esempio, elettrificazione delle banchine, disponibilità di combustibili alternativi, gestione dei rifiuti, facilities per la
+gestione delle acque residue di sea water scrubber, gestione dei materiali dragati),
+così come viene considerata l'evoluzione verso combustibili a minori emissioni.
+E’ atteso peraltro un incremento, valutato complessivamente modesto rispetto al
+traffico complessivamente presente nell’area, del traffico a corto raggio per attività di costruzione e manutenzione dei campi eolici previsti nello scenario, e di altri campi eolici potenzialmente realizzabili in aree circostanti (in particolare nell’area a ovest
+dell’area pilota SOS).","Lo scenario BD, oltre ad attuare quanto previsto dal sistema di protezione ambientale
+e riduzione delle pressioni esistente, aumenta l'estensione delle aree protette, considera e promuove interventi di restauro attivo e passivo (REG.UE 2024/1991 del 17/06/24) e introduce nuove misure di conservazione spazialmente basate. L’importanza della conservazione degli habitat e delle specie è sempre più riconosciuta dal grande pubblico. Ciononostante, la crescita dei settori marittimi è considerata una priorità. Gli investimenti sulla crescita blu considerano attentamente e mirano alla sostenibilità, migliorando l’efficienza energetica e producendo una
+migliore gestione delle interazioni fra gli usi e l’ambiente. Pur trovandoci in uno scenario denominato ""Blue Development"", la ""natura"" non viene considerata un ""uso"" alla pari di altri, in quanto la tutela della natura deve essere attuata in generale in relazione a qualsiasi tipo di uso. La strategia per l'ambiente marino di cui la
+pianificazione marittima deve tener conto si rivolge a tutta l'area marittima del Mediterraneo ed individua azioni ed obiettivi di qualità ambientale per tutte le acque marine. In sintesi, il tema Natura rappresenta un elemento prevalente e imprescindibile su tutto lo spazio marittimo.
+Vengono promosse strategie di economia circolare per la trasformazione e
+valorizzazione dei rifiuti provenienti dal mare individuando nelle aree portuali i siti di
+riferimento per l’attuazione di queste strategie.","Nello scenario BD, le misure per affrontare l’erosione costiera e il rischio di inondazioni vengono intraprese con una chiara visione e programmazione a lungo termine (PRCEC, 2020 e nuovo Piano in fase di ultimazione da parte dell’Autorità di Bacino del Distretto
+Idrografico della Sicilia). Vengono identificati gli hotspot. Le misure da intraprendere non sono semplici: è necessario ricreare il nesso naturale terra-mare, considerando l’apporto fluviale e le dinamiche naturali delle dune. Le cause dell’erosione vengono analizzate e comprese alla scala spaziale più adeguata e le azioni di difesa costiera
+sono integrate ove necessario con azioni lungo i corsi d’acqua, le foci e le aree portuali. Gli interventi attuati sono soft e le NBS hanno la priorità. Viene programmazione e
+attuata con i comuni costieri la corretta gestione delle banquette di Poseidonia,
+favorendo in caso di rimozione il suo riutilizzo nelle forme consentite dalle norme vigenti.","La transizione sostenibile del turismo C&M viene fortemente promossa e i modelli turistici implementati evolvono rispetto a quelli di tipo tradizionale oggi in essere. Questo riguarda importanti aspetti di sostenibilità come il risparmio energetico e delle
+risorse in genere, la gestione dei rifiuti, la gestione e destagionalizzazione dei flussi.
+Viene promossa la diversificazione dell’offerta su settori di turismo esperienziale quali l’ecoturismo, anche in relazione all’ampliamento della rete di aree protette, il
+pescaturismo, il diving e il whale-watching.
+In collegamento con interventi sulle aree protette e nuove misure di conservazione,
+vengono introdotte specifiche misure per ridurre l'impatto delle barche da diporto sui fondali.","La distribuzione spaziale dello sforzo nell'area presenta nel tempo cambiamenti notevoli e l'intensità della pesca a strascico diminuisce, proseguendo il trend in atto ed
+anche in relazione all’istituzione di nuove aree protette e l'ampliamento delle FRA esistenti nelle aree con EFH e VME. Più precisamente, l'intensità della pesca a strascico diminuisce complessivamente del 9%, redistribuendo spazialmente lo sforzo tenendo conto delle nuove chiusure previste dallo scenario (e.g. nuove aree
+protette, campi eolici, nuove FRA). Questo trend è in linea anche con le politiche in atto
+per incentivare con risorse dedicate la riduzione della flotta per la pesca a strascico.","La ricerca e innovazione sono promosse nell'area (e.g. centri di ricerca, sistemi di osservazione e monitoraggio), per supportare un'economia blu sostenibile, la conservazione e restauro degli ecosistemi marini e la ricerca di materiali e soluzioni a basso impatto per gli impianti eolici offshore. Sono promosse attività di ricerca per:
+• sviluppare nuove modalità di fruizione e protezione del patrimonio culturale
+subacqueo e della biodiversità,
+• sviluppare nuove soluzioni tecniche per l’acquacoltura offshore,
+• la progettazione integrata tra parchi eolici e acquacoltura offshore e più in generale
+la sperimentazione di soluzioni di coesistenza e sinergia fra sistemi di produzione di energia rinnovabile in mare e dal mare e altri usi.
+• avviare e sostenere attività di citizen science.",,"Anche nello scenario BD la tutela del paesaggio (in particolare nelle aree vicine alla costa) e dell'UCH (in tutte le aree, comprese le acque profonde) è valorizzata e
+associata, ove possibile, alla protezione della natura stabilendo obiettivi comuni e
+attività di monitoraggio e sorveglianza. Le azioni di tutela sono anche associate ad iniziative gestite di turismo esperienziale e culturale, anche utilizzando tecnologie digitali. Le misure puntano a sostenere il valore paesaggistico della fascia costiera, promuovendo il recupero e la riqualificazione di edifici e aree soggette a tutela e lotta
+all'abusivismo edilizio nelle aree costiere. Particolare rilevanza ha la conservazione del
+patrimonio archeologico subacqueo. Si propongono anche iniziative mirate a promuovere e creare consapevolezza sul patrimonio culturale immateriale e promuovere la cooperazione regionale e internazionale nel settore. La valorizzazione si focalizza su azione “in loco”, mediante la realizzazione di itinerari subacquei o multimediali (culturali ma anche naturalistici, Telecamere subacquee, VR), al fine di
+sensibilizzare i fruitori alla tutela e alla fruizione sostenibile.","Presupponendo misure più rigorose per la protezione della natura e la riduzione degli effetti negativi delle attività umane, gli sviluppi futuri dei parchi eolici offshore daranno
+priorità a soluzioni per ridurne gli impatti. Seguendo le migliori pratiche attuali, ciò
+implicherà una serie di opzioni che incidono su:
+1) la progettazione dell’OWF: utilizzo delle infrastrutture dell’OWF in progetti di ripristino della natura (ad esempio fondazioni di turbine progettate come scogliere artificiali);
+2) la gestione strategica delle attività dell’OWF: riduzione degli effetti cumulativi delle attività legate agli OWF sulle specie e sugli habitat di valore identificati, implicando una pianificazione nello spazio e nel tempo, ad esempio, delle attività di trivellazione o di fondazione, delle attività delle navi, del funzionamento degli OWF in linea con i modelli migratori e sensibilità/tempo di recupero e capacità delle specie;
+3) l'interazione tra l’OWF e altre attività.
+In linea con: 1) le ipotesi dello scenario BD orientato primariamente a promuovere l’economia del mare attraverso soluzioni innovative e nel rispetto degli obiettivi di
+conservazione, 2) le aree con proposte di OWF in essere, con vari livelli di avanzamento progettuale e istruttorio, 3) esempi di soluzioni di migliori pratiche
+utilizzabili per ridurre gli impatti, 4) gli obiettivi nazionali attuali e
+ragionevolmente attesi per l'Italia al 2030 e 2040-2050 (2.1 GW al 2030 (PNIEC,
+2023), 5 GW al 2040-2050), la capacità OWF installata nel 2040 in SOS è stabilita
+in un valore obiettivo nello scenario BD di 3 GW. L’esigenza di raggiungere un impatto ambientale ridotto dovrà avere un impatto sulla progettazione degli OWF, sulle soluzioni tecnologiche adottate e sulle opzioni di gestione degli OWF. Considerando una produzione specifica attesa di 4 MW/km2,
+sulla base anche delle intensità medie del vento presente nell'area (7-8 m/s), ciò si
+tradurrebbe in ca. 750 km2 per ospitare 3 GW, entro il 2040.","In coerenza con le politiche regionali / nazionali / europee di sviluppo del settore, la
+produzione alimentare nella zona è considerata una priorità e lo sviluppo
+dell’acquacoltura rappresenta una risorsa importante. Gli investimenti in tecnologie innovative (e.g. IMTA, mangimistica e riduzione degli antibiotici) e nella diversificazione delle specie sono identificati come uno strumento per rispondere alle pressioni e adeguatamente sostenuti dai fondi strutturali. I fondi mirano anche al miglioramento dell’efficienza energetica nell’acquacoltura. Viene promossa l’attuazione del piano
+AZA (D.A.103/GAB del 25/06/2021).
+Le possibilità di sviluppo dell’acquacoltura in condizioni esposte / offshore vengono esplorate adeguatamente, in particolare in abbinamento con l’isola energetica
+multiuso (OW2) e con gli altri impianti eolici previsti dallo scenario, e sostenute da
+investimenti centrali. Le caratteristiche oceanografiche delle aree e la loro collocazione rispetto alla linea di costa potrebbe consentire l’allevamento di specie ittiche ad elevato valore commerciale utilizzando gabbie emerse o sommerse.
+In merito ai processi di sviluppo, le strategie dell’acquacoltura siciliana passano attraverso le politiche di indirizzo regionale che dovrebbero tendere a potenziare
+l’innovazione tecnologica, di processo e di prodotto. I prodotti vengono valorizzati e promossi, anche attraverso una dichiarata sostenibilità ambientale delle aziende, nonché la ricerca di nuovi mercati e l’estensione della produzione a nuovi prodotti di allevamento, con costi di produzione sempre più contenuti. Uno scenario interessante
+è quello di penetrare nuovi settori di mercato con uno spettro di prodotti più ampio (nuove specie come per esempio l’ombrina boccadoro, ricciole, e diverse taglie), con strategie di commercializzazione innovative (semilavorati freschi, filetti), l’adozione di
+marchi di origine, IGT e certificazioni.
+Un contributo importante allo sviluppo del settore può essere fornito dalle competenze presenti sull’Isola in ambito scientifico e dalle indicazioni che possono
+provenire dal distretto produttivo della pesca e dal distretto tecnologico agro-bio e pesca ecocompatibile (MASAF, 2009).",
