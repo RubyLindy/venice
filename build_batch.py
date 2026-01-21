@@ -1,6 +1,13 @@
 import json
 import pandas as pd
 from config import MODEL, SCENARIOS, MEASURES_FILE, OUTPUT_DIR
+import re
+
+def normalize_id(text):
+    text = str(text).lower().strip()
+    text = re.sub(r"\s+", "_", text)
+    text = re.sub(r"[^\w_]", "", text)
+    return text
 
 with open("prompts/system_context.txt", "r", encoding="utf-8") as f:
     SYSTEM_CONTEXT = f.read()
@@ -10,16 +17,19 @@ measures = pd.read_csv(MEASURES_FILE)
 requests = []
 
 for _, row in measures.iterrows():
-    for scenario in SCENARIOS:
+    for test_scenario in SCENARIOS:
         prompt = f"""
 Considera il contesto fornito (scenari, aree di studio, relazione area–scenario).
 
 MISURA:
-"{row.measure_text}"
+"{row['misura']}"
 
-AREA: {row.area}
-SCENARIO: {scenario}
-TEMA: {row.topic}
+AREA: {row['area']}
+SCENARIO: {row['scenario']}
+TEMA: {row['tema']}
+
+MOTIVAZIONE (contesto aggiuntivo):
+"{row['motivazione']}"
 
 1) La misura è compatibile con questo scenario?
    Rispondi esclusivamente con "yes" o "no" e fornisci una breve motivazione
@@ -32,9 +42,16 @@ TEMA: {row.topic}
 Fornisci l’output esclusivamente in formato JSON con i seguenti campi:
 area, scenario, topic, measure_text, compatibility, motivation, critical_issues.
 """
+        
+        custom_id = (
+            f"{normalize_id(row['area'])}__"
+            f"{normalize_id(row['tema'])}__"
+            f"{normalize_id(row['scenario'])}__VS__"
+            f"{normalize_id(test_scenario)}"
+        )
 
         requests.append({
-            "custom_id": f"{row.area}_{row.topic}_{scenario}",
+            "custom_id": custom_id,
             "method": "POST",
             "url": "/v1/responses",
             "body": {
