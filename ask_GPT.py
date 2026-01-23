@@ -9,29 +9,13 @@ import time
 # Initialize client
 client = OpenAI()
 
-# Read system context
 with open("prompts/system_context.txt", "r", encoding="utf-8") as f:
     SYSTEM_CONTEXT = f.read()
 
-# Read measures CSV
 measures = pd.read_csv(MEASURES_FILE)
-
-# Load prompt cache if it exists
-cache_file = f"{OUTPUT_DIR}/prompt_cache.json"
-if os.path.exists(cache_file):
-    print(f"Loading cache from {cache_file}")
-    with open(cache_file, "r", encoding="utf-8") as f:
-        prompt_cache = json.load(f)
-else:
-    prompt_cache = {}
-
-print(f"Prompt cache entries: {len(prompt_cache)}")
 
 # Store responses
 responses = []
-
-# Track processed prompts in this run to avoid duplicates
-processed_hashes = set(prompt_cache.keys())
 
 for _, row in measures.iterrows():
     for test_scenario in SCENARIOS:
@@ -61,32 +45,21 @@ Fornisci l’output esclusivamente in formato JSON con i seguenti campi:
 area, scenario, topic, measure_text, compatibility, motivation, critical_issues.
 """
 
-        # Generate unique short ID
         raw_id = f"{row['area']}|{row['tema']}|{row['scenario']}|{test_scenario}"
         custom_id = hashlib.sha1(raw_id.encode("utf-8")).hexdigest()[:16]
 
-        # Hash prompt for caching
         prompt_hash = hashlib.sha1(prompt.encode("utf-8")).hexdigest()
 
-        # Only call API if prompt not already processed
-        if prompt_hash in processed_hashes:
-            # Already in cache
-            output_text = prompt_cache[prompt_hash]
-            print(f"[CACHE HIT] {prompt_hash}")
-        else:
-            # API call
-            print(f"[API CALL] {prompt_hash}")
-            resp = client.responses.create(
-                model=MODEL,
-                input=[
-                    {"role": "system", "content": SYSTEM_CONTEXT},
-                    {"role": "user", "content": prompt}
-                ]
-            )
-            output_text = resp.output_text
-            prompt_cache[prompt_hash] = output_text
-            processed_hashes.add(prompt_hash)
-            time.sleep(0.5)  # optional delay
+        print(f"[API CALL] {prompt_hash}")
+        resp = client.responses.create(
+            model=MODEL,
+            input=[
+                {"role": "system", "content": SYSTEM_CONTEXT},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        output_text = resp.output_text
+        time.sleep(0.5)  # optional delay
 
         # Save the response
         responses.append({
@@ -98,9 +71,5 @@ area, scenario, topic, measure_text, compatibility, motivation, critical_issues.
 output_file = f"{OUTPUT_DIR}/responses.json"
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(responses, f, ensure_ascii=False, indent=2)
-
-# Save updated cache
-with open(cache_file, "w", encoding="utf-8") as f:
-    json.dump(prompt_cache, f, ensure_ascii=False, indent=2)
 
 print(f"All done! Responses saved to {output_file}")
