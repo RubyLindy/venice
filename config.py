@@ -1,4 +1,4 @@
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-4o-mini-2024-07-18"
 
 SCENARIOS = [
     "Slow Pace",

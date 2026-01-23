@@ -1,38 +1,39 @@
+import time
+import json
 from openai import OpenAI
-import os
-
-print("DOWNLOAD SCRIPT STARTED")
-
-BATCH_ID = "batch_697350963c748190b9387267ba2cb739"
-OUTPUT_DIR = "output"
-OUTPUT_FILE = f"{OUTPUT_DIR}/batch_output.jsonl"
 
 client = OpenAI()
 
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+BATCH_ID = "batch_6973674bb43c8190ba52af2243a3c5b7"
+POLL_INTERVAL = 10
 
-batch = client.batches.retrieve(BATCH_ID)
+def wait_for_batch(batch_id):
+    while True:
+        batch = client.batches.retrieve(batch_id)
+        status = batch.status
+        print(f"Batch status: {status}, completed={batch.request_counts.completed}, failed={batch.request_counts.failed}")
+        
+        if status in ["completed", "failed", "cancelled", "expired"]:
+            return batch
+        time.sleep(POLL_INTERVAL)
 
-print("STATUS:", batch.status)
-print("ERROR FILE ID:", batch.error_file_id)
-print("OUTPUT FILE ID:", batch.output_file_id)
-print("REQUEST COUNTS:", batch.request_counts)
+def download_batch_output(batch):
+    if batch.output_file_id:
+        output_file = client.files.retrieve(batch.output_file_id)
+        output_content = client.files.download(output_file.id)
+        with open("batch_output.jsonl", "wb") as f:
+            f.write(output_content)
+        print("Batch output downloaded to batch_output.jsonl")
+    elif batch.error_file_id:
+        error_file = client.files.retrieve(batch.error_file_id)
+        error_content = client.files.download(error_file.id)
+        with open("batch_errors.jsonl", "wb") as f:
+            f.write(error_content)
+        print("Batch errors downloaded to batch_errors.jsonl")
+    else:
+        print("No output or error file found for this batch.")
 
-print("Batch status:", batch.status)
-
-if batch.status == "failed":
-    print("Error file id:", batch.error_file_id)
-
-if batch.status == "failed" and batch.error_file_id:
-    error_bytes = client.files.content(batch.error_file_id)
-    print(error_bytes.decode("utf-8"))
-
-if not batch.output_file_id:
-    raise RuntimeError("Batch completed but no output_file_id found.")
-
-content = client.files.content(batch.output_file_id)
-
-with open(OUTPUT_FILE, "wb") as f:
-    f.write(content)
-
-print(f"Batch output downloaded to {OUTPUT_FILE}")
+if __name__ == "__main__":
+    print("Waiting for batch to complete...")
+    batch = wait_for_batch(BATCH_ID)
+    download_batch_output(batch)

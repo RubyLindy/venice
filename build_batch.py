@@ -4,12 +4,6 @@ from config import MODEL, SCENARIOS, MEASURES_FILE, OUTPUT_DIR
 import re
 import hashlib
 
-def normalize_id(text):
-    text = str(text).lower().strip()
-    text = re.sub(r"\s+", "_", text)
-    text = re.sub(r"[^\w_]", "", text)
-    return text
-
 with open("prompts/system_context.txt", "r", encoding="utf-8") as f:
     SYSTEM_CONTEXT = f.read()
 
