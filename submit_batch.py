@@ -8,11 +8,15 @@ file = client.files.create(
     purpose="batch"
 )
 
+print("Uploaded file ID:", file.id)
+
 batch = client.batches.create(
     input_file_id=file.id,
     endpoint="/v1/responses",
     completion_window=BATCH_COMPLETION_WINDOW
 )
+
+print(batch)
 
 print("Batch submitted")
 print("Batch ID:", batch.id)

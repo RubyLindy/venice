@@ -1,4 +1,4 @@
-MODEL = "gpt-4.1-mini"
+MODEL = "gpt-4o-mini"
 
 SCENARIOS = [
     "Slow Pace",

@@ -2,6 +2,7 @@ import json
 import pandas as pd
 from config import MODEL, SCENARIOS, MEASURES_FILE, OUTPUT_DIR
 import re
+import hashlib
 
 def normalize_id(text):
     text = str(text).lower().strip()
@@ -43,12 +44,10 @@ Fornisci l’output esclusivamente in formato JSON con i seguenti campi:
 area, scenario, topic, measure_text, compatibility, motivation, critical_issues.
 """
         
-        custom_id = (
-            f"{normalize_id(row['area'])}__"
-            f"{normalize_id(row['tema'])}__"
-            f"{normalize_id(row['scenario'])}__VS__"
-            f"{normalize_id(test_scenario)}"
-        )
+        raw_id = f"{row['area']}|{row['tema']}|{row['scenario']}|{test_scenario}"
+        short_id = hashlib.sha1(raw_id.encode("utf-8")).hexdigest()[:16]
+
+        custom_id = short_id
 
         requests.append({
             "custom_id": custom_id,
@@ -64,6 +63,11 @@ area, scenario, topic, measure_text, compatibility, motivation, critical_issues.
         })
 
 output_path = f"{OUTPUT_DIR}/batch_input.jsonl"
+
+print("Number of batch requests:", len(requests))
+
+if len(requests) == 0:
+    raise RuntimeError("No batch requests generated — CSV parsing logic is wrong.")
 
 with open(output_path, "w", encoding="utf-8") as f:
     for r in requests:
