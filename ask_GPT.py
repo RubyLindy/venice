@@ -1,11 +1,10 @@
 import json
 import pandas as pd
 from config import MODEL, SCENARIOS, MEASURES_FILE, OUTPUT_DIR
-import re
 import hashlib
 from openai import OpenAI
-import time
 import os
+import time
 
 # Initialize client
 client = OpenAI()
@@ -17,18 +16,22 @@ with open("prompts/system_context.txt", "r", encoding="utf-8") as f:
 # Read measures CSV
 measures = pd.read_csv(MEASURES_FILE)
 
-# Load cache if it exists
+# Load prompt cache if it exists
 cache_file = f"{OUTPUT_DIR}/prompt_cache.json"
 if os.path.exists(cache_file):
-    print(f"The cache {cache_file} exists." )
+    print(f"Loading cache from {cache_file}")
     with open(cache_file, "r", encoding="utf-8") as f:
         prompt_cache = json.load(f)
 else:
     prompt_cache = {}
 
-print(f"Prompt cache: {prompt_cache}")
+print(f"Prompt cache entries: {len(prompt_cache)}")
+
 # Store responses
 responses = []
+
+# Track processed prompts in this run to avoid duplicates
+processed_hashes = set(prompt_cache.keys())
 
 for _, row in measures.iterrows():
     for test_scenario in SCENARIOS:
@@ -60,33 +63,38 @@ area, scenario, topic, measure_text, compatibility, motivation, critical_issues.
 
         # Generate unique short ID
         raw_id = f"{row['area']}|{row['tema']}|{row['scenario']}|{test_scenario}"
-        short_id = hashlib.sha1(raw_id.encode("utf-8")).hexdigest()[:16]
-        custom_id = short_id
+        custom_id = hashlib.sha1(raw_id.encode("utf-8")).hexdigest()[:16]
 
-        # Use prompt hash as cache key
+        # Hash prompt for caching
         prompt_hash = hashlib.sha1(prompt.encode("utf-8")).hexdigest()
 
-        if prompt_hash in prompt_cache:
+        # Only call API if prompt not already processed
+        if prompt_hash in processed_hashes:
+            # Already in cache
             output_text = prompt_cache[prompt_hash]
-            log_msg = "[CACHE HIT]"
+            print(f"[CACHE HIT] {prompt_hash}")
         else:
+            # API call
+            print(f"[API CALL] {prompt_hash}")
             resp = client.responses.create(
                 model=MODEL,
-                input=[{"role": "system", "content": SYSTEM_CONTEXT},
-                    {"role": "user", "content": prompt}]
+                input=[
+                    {"role": "system", "content": SYSTEM_CONTEXT},
+                    {"role": "user", "content": prompt}
+                ]
             )
             output_text = resp.output_text
             prompt_cache[prompt_hash] = output_text
-            log_msg = "[API CALL]"
+            processed_hashes.add(prompt_hash)
+            time.sleep(0.5)  # optional delay
 
-        print(f"{log_msg} {custom_id}")
-
+        # Save the response
         responses.append({
             "custom_id": custom_id,
             "response": output_text
         })
 
-# Save all responses
+# Save responses
 output_file = f"{OUTPUT_DIR}/responses.json"
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(responses, f, ensure_ascii=False, indent=2)
