@@ -42,7 +42,6 @@ Fornisci l’output esclusivamente in formato JSON con i seguenti campi:
 area, scenario, topic, measure_text, compatibility, motivation, critical_issues.
 """
 
-    # Unique ID per measure/scenario combo
     raw_id = f"{row.name}|{row['area']}|{row['tema']}|{row['scenario']}"
     custom_id = hashlib.sha1(raw_id.encode("utf-8")).hexdigest()[:16]
 

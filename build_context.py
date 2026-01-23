@@ -1,6 +1,10 @@
 import pandas as pd
 from config import CONTEXT_FILES
 
+## Change AreaX to only include the first 4 columns
+## Make the output file more definitive for the API (excel)
+## For the measures the actual scenario should always be yes but the different scenarios should probably be no but don't always to be
+
 def df_to_text(df, title):
     return f"\n### {title}\n" + df.to_csv(index=False)
 
